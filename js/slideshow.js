@@ -15,7 +15,7 @@
             let img = document.createElement('IMG');
             img.classList.add('slide');
             img.style.display = 'none';
-            img.setAttribute('src', `/img/slideshow/${image}`);
+            img.setAttribute('src', `./img/slideshow/${image}`);
             imageElts.push(img);
             elt.appendChild(img);
         });
