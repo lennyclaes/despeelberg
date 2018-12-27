@@ -115,7 +115,7 @@ body {
     padding: 65px 0;
 }
 
-.block:nth-child(1) {
+.block--first {
     height: 95vh;
     padding: 0;
 }
@@ -262,7 +262,7 @@ body {
         color: #fff;
     }
 
-    .block:nth-child(1) {
+    .block--first {
         height: auto;
         padding: 25px 0;
     }
