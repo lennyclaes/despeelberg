@@ -1,4 +1,4 @@
-# Speelpein De Speelberg vzw
+# Speelplein De Speelberg vzw
 
 ![Speelplein De Speelberg Logo](https://raw.githubusercontent.com/lotusfreak15/despeelberg/master/img/logo.png)
 
