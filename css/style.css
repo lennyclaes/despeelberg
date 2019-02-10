@@ -51,8 +51,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background: #fff;
-    box-shadow: 0px 1px 3px #707070;
+    background: #1a6ac1;
     width: 100%;
     z-index: 3;
     transition: 0.2s linear;
@@ -74,10 +73,10 @@ body {
 }
 
 .header__brand-link {
-    color: #1a6ac1;
+    color: #fff;
     text-decoration: none;
     display: block;
-    font-family: 'Luckiest Guy', Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
 }
 
 .header__nav {
@@ -94,15 +93,19 @@ body {
 
 .nav__link {
     padding: 15px;
-    color: #707070;
+    color: #ececec;
     text-decoration: none;
     font-size: 18px;
     font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
     transition: 0.1s linear;
 }
 
+.nav__link:last-child {
+    display: none;
+}
+
 .nav__link:hover {
-    color: #1a6ac1;
+    color: #fff;
 }
 
 /* EINDE HEADER */
@@ -135,7 +138,7 @@ body {
 }
 
 .block__title {
-    font-family: 'Luckiest Guy', Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
     font-size: 20px;
     padding: 20px;
     color: #444;
@@ -239,17 +242,36 @@ body {
 @media (max-width: 860px) {
     .header {
         padding: 10px 0;
-        /* position: relative; */
         background: #1a6ac1;
         box-shadow: none;
     }
 
     .header__container {
         width: 100%;
+        flex-direction: column;
     }
-    
+
     .header__nav {
+        width: 100%;
+        display: block;
+    }
+
+    .nav__link:not(:last-child) {
         display: none;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav__link:last-child {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+    }
+
+    .nav {
+        flex-direction: column;
     }
 
     .header__brand {
@@ -260,6 +282,10 @@ body {
         font-size: 12px;
         text-align: center;
         color: #fff;
+    }
+
+    .block {
+        padding: 25px 0;
     }
 
     .block--first {
